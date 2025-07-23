@@ -15768,7 +15768,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Chomps with psychic fangs.\n"
             "Destroys any barriers."),
         .effect = EFFECT_BRICK_BREAK,
-        .power = 85,
+        .power = 75,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 15,
