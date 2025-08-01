@@ -14,14 +14,13 @@ VerdanturfSanctuary_EventScript_Lacey_Battle::
 
 LaceyIntro::
 # 13 "data/maps/VerdanturfSanctuary/scripts.pory"
-	.string "Let me dazzle you with my beautiful\n"
-	.string "POKéMON and the power of the sun!$"
+	.string "I'll show you the power of the sun!\n$"
 
 LaceyOutro::
-# 18 "data/maps/VerdanturfSanctuary/scripts.pory"
+# 17 "data/maps/VerdanturfSanctuary/scripts.pory"
 	.string "I guess my sun has set...\n$"
 
 LaceyBeaten::
-# 22 "data/maps/VerdanturfSanctuary/scripts.pory"
-	.string "I'm training to be as great as Flannery\n"
+# 21 "data/maps/VerdanturfSanctuary/scripts.pory"
+	.string "I'm training to be as great as FLANNERY\n"
 	.string "one day. Isn't her Torkoal the cutest?\n$"

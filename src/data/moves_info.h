@@ -1687,8 +1687,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Submission"),
         .description = COMPOUND_STRING(
-            "A reckless body slam that\n"
-            "also hurts the user."),
+            "A reckless slam that also\n"
+            "may paralyze the foe."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FIGHTING,
@@ -3301,16 +3301,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Kinesis"),
         .description = COMPOUND_STRING(
-            "Distracts the foe.\n"
-            "May lower accuracy."),
-        .effect = EFFECT_ACCURACY_DOWN,
-        .power = 0,
+            "Super effective on Steel-\n"
+            "types. May lower accuracy."),
+        .effect = EFFECT_KINESIS,
+        .power = 60,
         .type = TYPE_PSYCHIC,
-        .accuracy = 80,
+        .accuracy = 90,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 20,
+        }),
         .zMove = { .effect = Z_EFFECT_EVSN_UP_1 },
         .magicCoatAffected = B_UPDATED_MOVE_FLAGS >= GEN_5,
         .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
