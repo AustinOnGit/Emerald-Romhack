@@ -32563,7 +32563,8 @@
       "MOVE_SCALE_SHOT",
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
-      "MOVE_WHIRLPOOL"
+      "MOVE_WHIRLPOOL",
+      "MOVE_MOONBLAST"
     ],
     "EggMoves": [
       "MOVE_SUPERSONIC",

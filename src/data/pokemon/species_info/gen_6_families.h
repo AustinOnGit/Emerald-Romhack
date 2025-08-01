@@ -2810,7 +2810,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Skrelp)
         .levelUpLearnset = sSkrelpLevelUpLearnset,
         .teachableLearnset = sSkrelpTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DRAGALGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DRAGALGE}),
     },
 
     [SPECIES_DRAGALGE] =

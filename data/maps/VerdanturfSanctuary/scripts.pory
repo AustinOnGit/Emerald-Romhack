@@ -11,8 +11,7 @@ script VerdanturfSanctuary_EventScript_Lacey_Battle{
 
 
 text LaceyIntro{
-    "Let me dazzle you with my beautiful\n"
-    "POKéMON and the power of the sun!"
+    "I'll show you the power of the sun!\n"
 }
 
 text LaceyOutro{
@@ -20,7 +19,7 @@ text LaceyOutro{
 }
 
 text LaceyBeaten{
-    "I'm training to be as great as Flannery\n"
+    "I'm training to be as great as FLANNERY\n"
     "one day. Isn't her Torkoal the cutest?\n"    
 }
 

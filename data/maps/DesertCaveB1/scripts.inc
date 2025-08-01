@@ -44,4 +44,5 @@ MoveTutor_Text_Slash_Tutor_Outro::
 
 MoveTutor_Text_Slash_Tutor_Outro2::
 # 35 "data/maps/DesertCaveB1/scripts.pory"
-	.string "Haha! Another excellent student!$"
+	.string "Make sure to come back for another\n"
+	.string "lesson, my student.$"

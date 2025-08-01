@@ -23,6 +23,7 @@ struct Item
     u8 type;
     u8 battleUsage;
     u8 flingPower;
+    u8 isFood;
 };
 
 struct BagPocket
@@ -71,6 +72,7 @@ u32 ItemId_GetHoldEffectParam(u32 itemId);
 const u8 *ItemId_GetDescription(u16 itemId);
 u8 ItemId_GetImportance(u16 itemId);
 u8 ItemId_GetPocket(u16 itemId);
+u8 ItemId_GetFood(u16 itemId);
 u8 ItemId_GetType(u16 itemId);
 ItemUseFunc ItemId_GetFieldFunc(u16 itemId);
 u8 ItemId_GetBattleUsage(u16 itemId);

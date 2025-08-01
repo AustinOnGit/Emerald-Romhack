@@ -663,7 +663,7 @@
 #define FLAG_HIDDEN_ITEM_DESERT_CAVE_B1_NUGGET  0x26C // Unused Flag
 #define FLAG_HIDDEN_ITEM_METEOR_FALLS_1F_3R_DAWN_STONE   0x26D // Unused Flag
 #define FLAG_HIDDEN_ITEM_METEOR_FALLS_1F_3R_COMET_SHARD  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
+#define FLAG_HIDDEN_ITEM_DESERT_CAVE_B1_BIG_NUGGET2  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag

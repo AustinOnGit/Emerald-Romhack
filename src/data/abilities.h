@@ -2634,4 +2634,16 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
+    [ABILITY_SNACK] =
+    {
+        .name = _("Snack"),
+        .description = COMPOUND_STRING("Held food recovers HP."),
+        .aiRating = 3,
+    },
+    [ABILITY_RESENTMENT] =
+    {
+        .name = _("Resentment"),
+        .description = COMPOUND_STRING("Cursed foe when defeated."),
+        .aiRating = 3,
+    },
 };

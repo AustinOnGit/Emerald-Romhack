@@ -23,9 +23,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 14,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -43,16 +43,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 10,
-      "y": 18,
-      "elevation": 0,
-      "item": "ITEM_SUN_STONE",
-      "flag": "FLAG_HIDDEN_ITEM_VERDANTURF_SANCTUARY_SUN_STONE"
-    },
-    {
-      "type": "hidden_item",
-      "x": 18,
-      "y": 16,
+      "x": 21,
+      "y": 7,
       "elevation": 0,
       "item": "ITEM_SHINY_STONE",
       "flag": "FLAG_HIDDEN_ITEM_VERDANTURF_SANCTUARY_SHINY_STONE"

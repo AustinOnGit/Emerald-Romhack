@@ -3327,12 +3327,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_GRAPPLOCT] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 98,
+        .baseHP        = 100,
+        .baseAttack    = 88,
         .baseDefense   = 100,
         .baseSpeed     = 42,
         .baseSpAttack  = 70,
-        .baseSpDefense = 100,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = 168,

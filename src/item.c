@@ -903,6 +903,11 @@ u8 ItemId_GetPocket(u16 itemId)
     return gItemsInfo[SanitizeItemId(itemId)].pocket;
 }
 
+u8 ItemId_GetFood(u16 itemId)
+{
+    return gItemsInfo[SanitizeItemId(itemId)].isFood;
+}
+
 u8 ItemId_GetType(u16 itemId)
 {
     return gItemsInfo[SanitizeItemId(itemId)].type;

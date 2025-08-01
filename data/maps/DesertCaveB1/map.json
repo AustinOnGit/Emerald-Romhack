@@ -197,7 +197,7 @@
       "y": 12,
       "elevation": 0,
       "item": "ITEM_BIG_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_DESERT_CAVE_B1_BIG_NUGGET"
+      "flag": "FLAG_HIDDEN_ITEM_DESERT_CAVE_B1_BIG_NUGGET2"
     },
     {
       "type": "hidden_item",

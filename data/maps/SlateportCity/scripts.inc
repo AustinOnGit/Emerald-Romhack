@@ -2916,13 +2916,15 @@ SlateportCity_Pokemart_Cook2_Badge4:
 	.2byte ITEM_GALARICA_CUFF
 # 1466 "data/maps/SlateportCity/scripts.pory"
 	.2byte ITEM_GALARICA_WREATH
+# 1467 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_LUCKY_EGG
 	.2byte ITEM_NONE
 
 SlateportBerrySellerIntro::
-# 1470 "data/maps/SlateportCity/scripts.pory"
+# 1471 "data/maps/SlateportCity/scripts.pory"
 	.string "Welcome! Fresh produce just for you,\n"
 	.string "and at a low, low price!\n$"
 
 SlateportBerrySellerOutro::
-# 1475 "data/maps/SlateportCity/scripts.pory"
+# 1476 "data/maps/SlateportCity/scripts.pory"
 	.string "Please come again!\n$"

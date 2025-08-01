@@ -33,5 +33,6 @@ text MoveTutor_Text_Slash_Tutor_Outro {
 }
 
 text MoveTutor_Text_Slash_Tutor_Outro2 {
-    "Haha! Another excellent student!"
+    "Make sure to come back for another\n"
+    "lesson, my student."
 }
