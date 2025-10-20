@@ -986,35 +986,35 @@ static const struct InGameTrade sIngameTrades[] =
 {
     [INGAME_TRADE_SEEDOT] =
     {
-        .nickname = _("DOTS"),
-        .species = SPECIES_SEEDOT,
+        .nickname = _("Dux"),
+        .species = SPECIES_FARFETCHD_GALARIAN,
         .ivs = {5, 4, 5, 4, 4, 4},
-        .abilityNum = 1,
+        .abilityNum = 2,
         .otId = 38726,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x84,
-        .heldItem = ITEM_CHESTO_BERRY,
+        .heldItem = ITEM_MUSCLE_BAND,
         .mailNum = -1,
         .otName = _("KOBE"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_RALTS
+        .requestedSpecies = SPECIES_STUFFUL
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("PLUSES"),
-        .species = SPECIES_PLUSLE,
+        .nickname = _("Cushion"),
+        .species = SPECIES_PINCURCHIN,
         .ivs = {4, 4, 4, 5, 5, 4},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 73996,
         .conditions = {5, 5, 30, 5, 5},
         .personality = 0x6F,
-        .heldItem = ITEM_WOOD_MAIL,
-        .mailNum = 0,
+        .heldItem = ITEM_ABILITY_SHIELD,
+        .mailNum = -1,
         .otName = _("ROMAN"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_VOLBEAT
+        .requestedSpecies = SPECIES_APPLIN
     },
     [INGAME_TRADE_HORSEA] =
     {
@@ -1047,7 +1047,39 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
-    }
+    },
+    [INGAME_TRADE_MAREEP] =
+    {
+        .nickname = _("Sheeply"),
+        .species = SPECIES_MAREEP,
+        .ivs = {5, 6, 5, 7, 4, 8},
+        .abilityNum = 0,
+        .otId = 78143,
+        .conditions = {5, 30, 5, 5, 5},
+        .personality = 0x72,
+        .heldItem = ITEM_WISE_GLASSES,
+        .mailNum = -1,
+        .otName = _("FLYNN"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_PYUKUMUKU
+    },
+    [INGAME_TRADE_HOOTHOOT] =
+    {
+        .nickname = _("Hooty"),
+        .species = SPECIES_HOOTHOOT,
+        .ivs = {5, 6, 5, 7, 4, 8},
+        .abilityNum = 2,
+        .otId = 62419,
+        .conditions = {5, 30, 5, 5, 5},
+        .personality = 0x6A,
+        .heldItem = ITEM_SPELL_TAG,
+        .mailNum = -1,
+        .otName = _("BECKET"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_MURKROW
+    },
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =

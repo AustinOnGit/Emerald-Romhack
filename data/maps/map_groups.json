@@ -446,7 +446,8 @@
     "RoughCaveB1",
     "RoughCaveB2",
     "DewfordMansion2",
-    "DewfordMansion3"
+    "DewfordMansion3",
+    "CaveOfWishes"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -636,6 +637,7 @@
     "Route119_House"
   ],
   "gMapGroup_IndoorRoute124": [
-    "Route124_DivingTreasureHuntersHouse"
+    "Route124_DivingTreasureHuntersHouse",
+    "Route124_ExtraHouse"
   ]
 }

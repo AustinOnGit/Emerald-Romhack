@@ -23,6 +23,38 @@ Route115_EventScript_Woman::
 	msgbox Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC
 	end
 
+Route115_EventScript_EggWoman::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_ROUTE115_EGG, Route115_EventScript_ReceivedEgg
+	msgbox Route115_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route115_EventScript_DeclineEgg
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route115_EventScript_NoRoomForEgg
+	msgbox Route115_Text_TakeCareOfEgg, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_ROUTE115_EGG
+	playfanfare MUS_OBTAIN_ITEM
+	message Route115_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_CLEFFA
+	release
+	end
+
+Route115_EventScript_DeclineEgg::
+	msgbox Route115_Text_AsYouWishThen, MSGBOX_DEFAULT
+	release
+	end
+
+Route115_EventScript_NoRoomForEgg::
+	msgbox Route115_Text_NoRoomForThisEgg, MSGBOX_DEFAULT
+	release
+	end
+
+Route115_EventScript_ReceivedEgg::
+	msgbox LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare, MSGBOX_DEFAULT
+	release
+	end
+
 Route115_EventScript_RouteSignRustboro::
 	msgbox Route115_Text_RouteSignRustboro, MSGBOX_SIGN
 	end
@@ -143,3 +175,27 @@ Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 	.string "FALLARBOR TOWN THROUGH HERE$"
 
+Route115_Text_HaveEggWillYouTakeIt:
+	.string "Ah, hello.\p"
+	.string "I'm from FALLARBOR TOWN,\n" 
+	.string "just up the mountain.\p"
+	.string "I have this CLEFAIRY EGG here, but,\n"
+	.string "I've been having trouble hatching it...\p"
+	.string "You look like a reliable TRAINER.\n"
+	.string "Maybe you could take it?$"
+
+Route115_Text_TakeCareOfEgg:
+	.string "Oh. thank you!\n"
+	.string "Please take good care of it!$"
+
+Route115_Text_ReceivedTheEgg:
+	.string "{PLAYER} received the EGG.$"
+
+Route115_Text_AsYouWishThen:
+	.string "Oh, okay...\p"
+	.string "I'll be here if you change you're mind.$"
+
+Route115_Text_NoRoomForThisEgg:
+	.string "Oh? You have too many POKéMON.\p"
+	.string "I'll wait here for you to make\n"
+	.string "some room for the EGG.$"

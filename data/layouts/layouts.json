@@ -4580,6 +4580,26 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/dummy1/border.bin",
       "blockdata_filepath": "data/layouts/dummy1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE124_EXTRA_HOUSE",
+      "name": "Route124_ExtraHouse_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route124_ExtraHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route124_ExtraHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_WISHES",
+      "name": "CaveOfWishes_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfWishes/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfWishes/map.bin"
     }
   ]
 }

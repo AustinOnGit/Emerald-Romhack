@@ -1710,7 +1710,7 @@ MtChimney_EventScript_Courtney::
 CourtneyMtChimneyIntro::
 # 860 "data/maps/MtChimney/scripts.pory"
 	.string "Ahahahaha!\p"
-	.string "Tabitha may not have been able to stop\n"
+	.string "TABITHA may not have been able to stop\n"
 	.string "you, but I will!$"
 
 CourtneyMtChimneyOutro::

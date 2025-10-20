@@ -4609,6 +4609,21 @@ bool16 HasAllMons(void)
     return TRUE;
 }
 
+bool16 Has100Mons(void)
+{
+    u16 count = 0;
+    u16 i;
+    for (i = 0; i < NATIONAL_DEX_COUNT + 1; i++)
+    {
+        if(GetSetPokedexFlag(i+1, FLAG_GET_CAUGHT))
+            count++;
+    }
+    if (count >= 100)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 static void ResetOtherVideoRegisters(u16 regBits)
 {
     if (!(regBits & DISPCNT_BG0_ON))

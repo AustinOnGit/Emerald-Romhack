@@ -145,9 +145,9 @@
       "flag": "FLAG_ITEM_ROUTE_124_YELLOW_SHARD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 18,
-      "y": 44,
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
+      "x": 54,
+      "y": 22,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -158,9 +158,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
-      "x": 17,
-      "y": 44,
+      "graphics_id": "OBJ_EVENT_GFX_TUBER_M",
+      "x": 53,
+      "y": 22,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -195,6 +195,32 @@
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Route124_EventScript_Isabella",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 39,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_PEARL_STRING",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_124_PEARL_STRING"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_BIG_PEARL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_124_BIG_PEARL"
     }
   ],
   "warp_events": [
@@ -204,9 +230,25 @@
       "elevation": 3,
       "dest_map": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE124_EXTRA_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_OF_WISHES",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -215,6 +257,14 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route124_EventScript_HuntersHouseSign"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 45,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route124_EventScript_ExtraHouseSign"
     }
   ]
 }

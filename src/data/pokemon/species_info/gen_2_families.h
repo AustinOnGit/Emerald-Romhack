@@ -965,12 +965,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_ARIADOS] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 90,
-        .baseDefense   = 70,
+        .baseHP        = 90,
+        .baseAttack    = 110,
+        .baseDefense   = 75,
         .baseSpeed     = 40,
         .baseSpAttack  = 60,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 70 : 60,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 75 : 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
         .catchRate = 90,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
@@ -2760,10 +2760,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_HONCHKROW] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 125,
+        .baseHP        = 90,
+        .baseAttack    = 115,
         .baseDefense   = 52,
-        .baseSpeed     = 71,
+        .baseSpeed     = 91,
         .baseSpAttack  = 105,
         .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
@@ -4947,10 +4947,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = CORSOLA_HP - 5,
         .baseAttack    = 55,
-        .baseDefense   = CORSOLA_DEFENSES + 5,
+        .baseDefense   = CORSOLA_DEFENSES - 5,
         .baseSpeed     = 30,
         .baseSpAttack  = 65,
-        .baseSpDefense = CORSOLA_DEFENSES + 5,
+        .baseSpDefense = CORSOLA_DEFENSES - 5,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 60,
         .expYield = CORSOLA_EXP_YIELD,
@@ -5734,7 +5734,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Stantler)
         .levelUpLearnset = sStantlerLevelUpLearnset,
         .teachableLearnset = sStantlerTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_MOVE_TWENTY_TIMES, MOVE_PSYSHIELD_BASH, SPECIES_WYRDEER}),
+        .evolutions = EVOLUTION({EVO_LEVEL_MOVE_TWENTY_TIMES, MOVE_PSYSHIELD_BASH, SPECIES_WYRDEER},
+                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_WYRDEER}),
     },
 
 #if P_GEN_8_CROSS_EVOS

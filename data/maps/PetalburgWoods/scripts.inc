@@ -91,7 +91,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
-	giveitem ITEM_ABILITY_PATCH
+	giveitem ITEM_ABILITY_CAPSULE
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
 	goto PetalburgWoods_EventScript_DevonResearcherFinish
 	end
@@ -367,10 +367,10 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you an ABILITY PATCH\n"
+	.string "I know, I'll give you an ABILITY CAPSULE\n"
 	.string "as my thanks!\p"
-	.string "You can use it to bring out a hidden\n"
-	.string "ability in one of your POKéMON!$"
+	.string "You can use it to change the ability\n"
+	.string "of one of your POKéMON!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
 	.string "Didn't that TEAM AQUA thug say\n"

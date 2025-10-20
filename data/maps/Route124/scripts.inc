@@ -10,6 +10,11 @@ Route124_EventScript_HuntersHouseSign::
 	msgbox Route124_Text_HuntersHouse, MSGBOX_SIGN
 	end
 
+Route124_EventScript_ExtraHouseSign::
+	msgbox Route124_Text_ExtraHouse, MSGBOX_SIGN
+	end
+
+
 Route124_EventScript_Spencer::
 	trainerbattle_single TRAINER_SPENCER, Route124_Text_SpencerIntro, Route124_Text_SpencerDefeat
 	msgbox Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE
@@ -101,4 +106,7 @@ Route124_EventScript_Isabella::
 
 Route124_Text_HuntersHouse:
 	.string "HUNTER'S HOUSE$"
+
+Route124_Text_ExtraHouse:
+	.string "STRATUS FAMILY HOUSE$"
 

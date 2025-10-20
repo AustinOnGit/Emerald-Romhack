@@ -164,4 +164,8 @@ DewfordTown_PokemonCenter_1F_Pokemart_Employee_Gym5:
 	.2byte ITEM_REPEL
 # 89 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 	.2byte ITEM_ESCAPE_ROPE
+# 90 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_RAZOR_CLAW
+# 91 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_RAZOR_FANG
 	.2byte ITEM_NONE

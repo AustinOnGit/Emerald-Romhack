@@ -417,6 +417,7 @@
 #define MAP_ROUGH_CAVE_B2                            (117 | (24 << 8))
 #define MAP_DEWFORD_MANSION2                         (118 | (24 << 8))
 #define MAP_DEWFORD_MANSION3                         (119 | (24 << 8))
+#define MAP_CAVE_OF_WISHES                           (120 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -607,6 +608,7 @@
 
 // gMapGroup_IndoorRoute124
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
+#define MAP_ROUTE124_EXTRA_HOUSE                   (1 | (33 << 8))
 
 #define MAP_GROUPS_COUNT 34
 

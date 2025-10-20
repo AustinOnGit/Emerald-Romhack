@@ -28,6 +28,7 @@ u16 CreateMonSpriteFromNationalDexNumber(u16, s16, s16, u16);
 bool16 HasAllHoennMons(void);
 void ResetPokedexScrollPositions(void);
 bool16 HasAllMons(void);
+bool16 Has100Mons(void);
 void CB2_OpenPokedex(void);
 void PrintMonMeasurements(u16 species, u32 owned);
 u8* ConvertMonHeightToString(u32 height);

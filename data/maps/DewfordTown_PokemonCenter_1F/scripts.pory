@@ -87,4 +87,6 @@ mart DewfordTown_PokemonCenter_1F_Pokemart_Employee_Gym5{
 	ITEM_BURN_HEAL
 	ITEM_REPEL
 	ITEM_ESCAPE_ROPE
+	ITEM_RAZOR_CLAW
+	ITEM_RAZOR_FANG
 }

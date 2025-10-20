@@ -25945,7 +25945,8 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_SCALD",
       "MOVE_PSYCHIC_FANGS",
-      "MOVE_LIQUIDATION"
+      "MOVE_LIQUIDATION",
+      "MOVE_AQUA_CUTTER"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -26075,7 +26076,8 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_SCALD",
       "MOVE_PSYCHIC_FANGS",
-      "MOVE_LIQUIDATION"
+      "MOVE_LIQUIDATION",
+      "MOVE_AQUA_CUTTER"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -28428,7 +28430,8 @@
       "MOVE_IRON_DEFENSE",
       "MOVE_X_SCISSOR",
       "MOVE_EARTH_POWER",
-      "MOVE_STEALTH_ROCK"
+      "MOVE_STEALTH_ROCK",
+      "MOVE_AQUA_CUTTER"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -28538,7 +28541,8 @@
       "MOVE_FLASH_CANNON",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_LIQUIDATION"
+      "MOVE_LIQUIDATION",
+      "MOVE_AQUA_CUTTER"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -63966,7 +63970,8 @@
       "MOVE_SCALD",
       "MOVE_DRILL_RUN",
       "MOVE_THROAT_CHOP",
-      "MOVE_LIQUIDATION"
+      "MOVE_LIQUIDATION",
+      "MOVE_AQUA_CUTTER"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",

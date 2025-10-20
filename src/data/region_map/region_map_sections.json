@@ -1767,6 +1767,14 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_CAVE_OF_WISHES",
+      "name": "CAVE OF WISHES",
+      "x": 21,
+      "y": 3,
+      "width": 1,
+      "height": 1
     }
   ]
 }

@@ -475,19 +475,15 @@ MtPyre_Summit_Text_Grunt3PostBattle:
 	.string "he was after!$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "Oh, I know!\n"
-	.string "You tried to join TEAM MAGMA,\l"
-	.string "but they wouldn't have you!\p"
-	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM AQUA!$"
+	.string "You again?!\p"
+	.string "I'll make you pay for humiliating\n"
+	.string "me at the WEATHER INSTITUTE!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
-	.string "badly, we can consider it…$"
+	.string "Not again!$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "We have a great combination going\n"
-	.string "with us members and our leader.$"
+	.string "This isn't the last you'll see of us!$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"

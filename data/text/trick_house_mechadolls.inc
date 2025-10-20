@@ -2,7 +2,7 @@ gTrickHouse_Mechadoll_Oddish::
 	.string "ODDISH$"
 
 gTrickHouse_Mechadoll_Poochyena::
-	.string "POOCHYENA$"
+	.string "ELEKID$"
 
 gTrickHouse_Mechadoll_Taillow::
 	.string "TAILLOW$"
@@ -68,7 +68,7 @@ gTrickHouse_Mechadoll_55Yen::
 	.string "¥55$"
 
 gTrickHouse_Mechadoll_Nothing::
-	.string "Nothing$"
+	.string "¥25$"
 
 gTrickHouse_Mechadoll_CostMore::
 	.string "They will cost more.$"

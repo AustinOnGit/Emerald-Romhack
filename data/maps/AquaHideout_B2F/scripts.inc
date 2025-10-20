@@ -90,26 +90,22 @@ AquaHideout_B2F_EventScript_Grunt8::
 	end
 
 AquaHideout_B2F_Text_MattIntro:
-	.string "Hehehe…\p"
+	.string "You again?\p"
 	.string "Got here already, did you?\n"
 	.string "We underestimated you!\p"
 	.string "But this is it!\p"
-	.string "I'm a cut above the GRUNTS you've seen\n"
-	.string "so far.\p"
 	.string "I'm not stalling for time.\n"
 	.string "I'm going to pulverize you!$"
 
 AquaHideout_B2F_Text_MattDefeat:
-	.string "Hehehe…\n"
+	.string "Heh…\n"
 	.string "So, I lost, too…$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
-	.string "Hehehe!\p"
 	.string "While I was toying with you, our BOSS\n"
 	.string "got through his preparations!$"
 
 AquaHideout_B2F_Text_MattPostBattle:
-	.string "Hehehe!\p"
 	.string "Our BOSS has already gone on his way to\n"
 	.string "some cave under the sea!\p"
 	.string "If you're going to give chase, you'd\n"

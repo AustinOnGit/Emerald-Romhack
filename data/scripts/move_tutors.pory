@@ -275,6 +275,64 @@ MoveTutor_EventScript_Exit::
 	end
 `
 
+script MoveTutor_EventScript_Slateport_Tutor {
+    lock
+    faceplayer
+    msgbox (SlateportCity_PokemonFanClub_Tutor_Select, MSGBOX_DEFAULT)
+    dynmultipush("SWAGGER", 0)
+    dynmultipush("FLATTER", 1)
+    dynmultipush("ENCORE", 2)
+    dynmultipush("HELPING HAND", 3)
+    dynmultistack(0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+    switch (var(VAR_RESULT)) {
+        case 0:
+            setvar(VAR_0x8005, MOVE_SWAGGER)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 1:
+            setvar(VAR_0x8005, MOVE_FLATTER)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 2:
+            setvar(VAR_0x8005, MOVE_ENCORE)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 3:
+            setvar(VAR_0x8005, MOVE_HELPING_HAND)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case MULTI_B_PRESSED:
+            call(SlateportCity_PokemonFanClub_Tutor_Exit)
+    }
+}
+
+script MoveTutor_EventScript_Mauville_Tutor {
+    lock
+    faceplayer
+    msgbox (SlateportCity_PokemonFanClub_Tutor_Select, MSGBOX_DEFAULT)
+    dynmultipush("ROLLOUT", 0)
+    dynmultipush("ELECTRO BALL", 1)
+    dynmultipush("DEFENSE CURL", 2)
+    dynmultipush("ICE BALL", 3)
+	dynmultipush("GYRO BALL", 4)
+    dynmultistack(0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+    switch (var(VAR_RESULT)) {
+        case 0:
+            setvar(VAR_0x8005, MOVE_ROLLOUT)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 1:
+            setvar(VAR_0x8005, MOVE_ELECTRO_BALL)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 2:
+            setvar(VAR_0x8005, MOVE_DEFENSE_CURL)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 3:
+            setvar(VAR_0x8005, MOVE_ICE_BALL)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 4:
+            setvar(VAR_0x8005, MOVE_GYRO_BALL)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case MULTI_B_PRESSED:
+            call(SlateportCity_PokemonFanClub_Tutor_Exit)
+    }
+}
+
 script MoveTutor_EventScript_Fang_Tutor {
     lock
     faceplayer
@@ -382,6 +440,7 @@ script MoveTutor_EventScript_Slash_Tutor {
     dynmultipush("RAZOR SHELL", 3)
 	dynmultipush("CROSS POISON", 4)
 	dynmultipush("X-SCISSOR", 5)
+	dynmultipush("AQUA CUTTER", 6)
     dynmultistack(0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
     switch (var(VAR_RESULT)) {
         case 0:
@@ -402,6 +461,9 @@ script MoveTutor_EventScript_Slash_Tutor {
 		case 5:
             setvar(VAR_0x8005, MOVE_X_SCISSOR)
             call(MoveTutor_EventScript_OpenPartyMenu)
+		case 6:
+            setvar(VAR_0x8005, MOVE_AQUA_CUTTER)
+			call(MoveTutor_EventScript_OpenPartyMenu)
         case MULTI_B_PRESSED:
             call(MoveTutor_EventScript_Slash_Tutor_Exit)
     }
@@ -475,4 +537,220 @@ script MoveTutor_EventScript_Dewford_Tutor2 {
         case MULTI_B_PRESSED:
             call(MoveTutor_EventScript_Slash_Tutor_Exit)
     }
+}
+
+script MoveTutor_EventScript_Mossdeep_Fighting_Tutor {
+    lock
+    faceplayer
+    msgbox (MoveTutor_Text_HotSpring_Tutor_Select, MSGBOX_DEFAULT)
+    dynmultipush("DYNAMIC PUNCH", 0)
+    dynmultipush("FOCUS BLAST", 1)
+    dynmultipush("THROAT CHOP", 2)
+    dynmultipush("COACHING", 3)
+	dynmultipush("ROCK SLIDE", 4)
+	dynmultipush("SUPERPOWER", 5)
+	dynmultipush("FAKE OUT", 6)
+    dynmultistack(0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+    switch (var(VAR_RESULT)) {
+        case 0:
+            setvar(VAR_0x8005, MOVE_DYNAMIC_PUNCH)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 1:
+            setvar(VAR_0x8005, MOVE_FOCUS_BLAST)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 2:
+            setvar(VAR_0x8005, MOVE_THROAT_CHOP)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 3:
+            setvar(VAR_0x8005, MOVE_COACHING)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 4:
+            setvar(VAR_0x8005, MOVE_ROCK_SLIDE)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 5:
+            setvar(VAR_0x8005, MOVE_SUPERPOWER)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 6:
+            setvar(VAR_0x8005, MOVE_FAKE_OUT)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case MULTI_B_PRESSED:
+            call(MoveTutor_EventScript_Slash_Tutor_Exit)
+    }
+}
+
+script SlateportCity_PokemonFanClub_Tutor{
+	faceplayer
+	lock
+	msgbox(SlateportCity_PokemonFanClub_Tutor_Intro, MSGBOX_DEFAULT)
+	waitmessage
+    call(MoveTutor_EventScript_Slateport_Tutor)
+	msgbox(SlateportCity_PokemonFanClub_Tutor_Outro2)
+	release
+	end
+}
+
+script SlateportCity_PokemonFanClub_Tutor_Exit{
+    msgbox (SlateportCity_PokemonFanClub_Tutor_Outro, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script MauvilleCity_Rolling_Tutor{
+	faceplayer
+	lock
+	msgbox(MauvilleCity_Rolling_Tutor_Intro, MSGBOX_DEFAULT)
+	waitmessage
+    call(MoveTutor_EventScript_Mauville_Tutor)
+	msgbox(MauvilleCity_Rolling_Tutor_Outro2)
+	release
+	end
+}
+
+script MauvilleCity_Rolling_Tutor_Exit{
+    msgbox (MauvilleCity_Rolling_Tutor_Outro, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script MossdeepCity_Fighting_Tutor{
+	faceplayer
+	lock
+	if(flag(FLAG_MOSSDEEP_TUTOR_BEATEN)){
+		msgbox(MossdeepCity_Fighting_Tutor_Intro, MSGBOX_DEFAULT)
+		waitmessage
+    	call(MoveTutor_EventScript_Mossdeep_Fighting_Tutor)
+	}
+	else{
+		msgbox(MossdeepCity_Fighting_Tutor_Meeting, MSGBOX_DEFAULT)
+		waitmessage
+		msgbox(MossdeepCity_Fighting_Tutor_Propose_Battle, MSGBOX_YESNO)
+		waitmessage
+		if(var(VAR_RESULT) == YES){
+			msgbox(MossdeepCity_Fighting_Tutor_Accept_Battle, MSGBOX_DEFAULT)
+			trainerbattle_no_intro(TRAINER_YOSHIDA, MossdeepCity_Fighting_Tutor_Battle_End)
+			setflag(FLAG_MOSSDEEP_TUTOR_BEATEN)
+			msgbox(MossdeepCity_Fighting_Tutor_After_Battle, MSGBOX_DEFAULT)
+			release
+			end
+		}
+		else{
+			msgbox(MossdeepCity_Fighting_Tutor_Decline_Battle, MSGBOX_DEFAULT)
+			release
+			end
+		}
+			
+	}
+	msgbox(MossdeepCity_Fighting_Tutor_Outro2)
+	release
+	end
+}
+
+script MossdeepCity_Fighting_Tutor_Exit{
+    msgbox (MossdeepCity_Fighting_Tutor_Outro, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text exit_yes{
+	"yes"
+}
+
+text exit_no{
+	"no"
+}
+
+text SlateportCity_PokemonFanClub_Tutor_Intro{
+	"Heh! My POKéMON totally rules!\n"
+	"It's cooler than any POKéMON!\p"
+	"I can even teach your POKéMON\n"
+	"to be almost as cool as mine."
+}
+
+text SlateportCity_PokemonFanClub_Tutor_Select{
+    "What move would you like to learn?"
+}
+
+text SlateportCity_PokemonFanClub_Tutor_Outro {
+    "What, no? Can't you get into\n"
+	"the spirit of things?"
+}
+
+text SlateportCity_PokemonFanClub_Tutor_Outro2 {
+	"Now go out there and show off\n"
+	"your cool moves!"
+}
+
+text MauvilleCity_Rolling_Tutor_Intro{
+	"Did you know that you can go from\n"
+	"here a long way in that direction\l"
+	"without changing direction?\p"
+	"I might even be able to roll\n"
+	"that way.\p"
+	"Do you think your POKéMON will\n"
+	"want to roll, too?\p"
+	"I can teach them some rolling\n"
+	"moves if you'd like."
+}
+
+text MauvilleCity_Rolling_Tutor_Select{
+    "Ehehe, sure thing! It'd be great if\n"
+	"the POKéMON looked like me."
+}
+
+text MauvilleCity_Rolling_Tutor_Outro {
+	"You don't need to be shy about it.\n"
+	"Let's roll!"
+}
+
+text MauvilleCity_Rolling_Tutor_Outro2 {
+	"Rolling around in the grass makes me\n"
+	"happy. Come on, let's roll!"
+}
+
+text MossdeepCity_Fighting_Tutor_Meeting {
+	"You there! You seem like a strong trainer!\p"
+	"Defeat me in battle and I shall teach you\n"
+	"my strongest techniques!"
+}
+
+text MossdeepCity_Fighting_Tutor_Propose_Battle {
+	"Do you accept my challenge?"
+}
+
+text MossdeepCity_Fighting_Tutor_Accept_Battle {
+	"Yes! Our battle shall be a great one!"
+}
+
+text MossdeepCity_Fighting_Tutor_Decline_Battle {
+	"I see. Come back if you can muster the\n"
+	"the courage to do so."
+}
+
+text MossdeepCity_Fighting_Tutor_Battle_End {
+	"Wahahaha! Very impressive!"
+}
+
+text MossdeepCity_Fighting_Tutor_After_Battle {
+	"That was a great battle! I would be\n"
+	"honored to have you as my disciple!\p"
+	"Come to me anytime to teach your\n"
+	"POKéMON my powerful techniques!"
+}
+
+text MossdeepCity_Fighting_Tutor_Intro {
+	"My disciple, let me teach your POKéMON\n"
+	"one of my powerful techniques!"
+}
+
+text MossdeepCity_Fighting_Tutor_Select {
+	"What move would you like to learn?"
+}
+
+text MossdeepCity_Fighting_Tutor_Outro {
+	"Grasp victory with the power I have\n"
+	"given to you!"
+}
+
+text MossdeepCity_Fighting_Tutor_Outro2 {
+	"Come back any time, my disciple."
 }

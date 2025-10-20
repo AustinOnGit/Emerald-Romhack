@@ -859,7 +859,7 @@ script MtChimney_EventScript_Courtney{
 
 text CourtneyMtChimneyIntro{
     "Ahahahaha!\p" 
-    "Tabitha may not have been able to stop\n" 
+    "TABITHA may not have been able to stop\n" 
     "you, but I will!"
 }
 

@@ -1106,3 +1106,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/dummy/scripts.inc"
 
 	.include "data/maps/dummy1/scripts.inc"
+
+	.include "data/maps/Route124_ExtraHouse/scripts.inc"
+
+	.include "data/maps/CaveOfWishes/scripts.inc"

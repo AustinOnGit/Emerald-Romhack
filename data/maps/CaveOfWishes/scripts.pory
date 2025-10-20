@@ -1,0 +1,72 @@
+raw`
+CaveOfWishes_MapScripts::
+	.byte 0
+
+ CaveofWishes_EventScript_Check::
+    msgbox CaveOfWishesExplain, MSGBOX_DEFAULT
+    waitmessage
+	specialvar VAR_RESULT, Has100Mons
+	goto_if_eq VAR_RESULT, TRUE, CaveofWishes_EventScript_Accept
+    goto_if_eq VAR_RESULT, FALSE, CaveofWishes_EventScript_Decline
+`
+script CaveOfWishes_EventScript_Greeting{
+    lock
+    faceplayer
+    msgbox(CaveOfWishesGreet, MSGBOX_DEFAULT)
+    waitmessage
+    call(CaveofWishes_EventScript_Check)
+    end
+}
+
+script CaveofWishes_EventScript_Accept{
+    lock
+    msgbox(CaveOfWishesAllow, MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(1, LadyMove)
+    delay(30)
+    release
+    end
+}
+
+script CaveofWishes_EventScript_Decline{
+    lock
+    msgbox(CaveOfWishesDeny, MSGBOX_DEFAULT)
+    waitmessage
+    release
+    end
+}
+
+text testYes{
+    "yes"
+} 
+
+text testNo{
+    "no"
+}
+
+text CaveOfWishesGreet{
+    "This is the Cave of Wishes, where the\n"
+    "legendary wish-granter POKéMON rests."
+}
+
+text CaveOfWishesExplain{
+    "Only those who have befriended many\n" 
+    "POKéMON on their journey are trusted\p"
+    "to enter the lower levels."
+}
+
+text CaveOfWishesAllow{
+    "Ah, I can see numerous bonds you have\n"
+    "made on your journey. You may enter."
+}
+
+text CaveOfWishesDeny{
+    "You are still a fledgling trainer.\p"
+    "Come back when you've made more bonds\n"
+    "with POKéMON around the HOENN region."
+}
+
+movement LadyMove{
+    walk_left
+    face_right
+}
