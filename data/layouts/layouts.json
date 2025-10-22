@@ -4600,6 +4600,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveOfWishes/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfWishes/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_WISHES_B1F",
+      "name": "CaveOfWishes_B1F_Layout",
+      "width": 11,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfWishes_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfWishes_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_WISHES_B2F",
+      "name": "CaveOfWishes_B2F_Layout",
+      "width": 11,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfWishes_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfWishes_B2F/map.bin"
     }
   ]
 }

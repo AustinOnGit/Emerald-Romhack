@@ -1,0 +1,9 @@
+mapscripts CaveOfWishes_B1F_MapScripts {
+    
+}
+
+script CaveOfWishes_B1F_clearflag{
+    clearflag(FLAG_LADY_MOVED)
+    release
+    end
+}

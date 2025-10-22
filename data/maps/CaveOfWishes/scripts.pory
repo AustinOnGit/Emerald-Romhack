@@ -6,29 +6,36 @@ CaveOfWishes_MapScripts::
     msgbox CaveOfWishesExplain, MSGBOX_DEFAULT
     waitmessage
 	specialvar VAR_RESULT, Has100Mons
-	goto_if_eq VAR_RESULT, TRUE, CaveofWishes_EventScript_Accept
-    goto_if_eq VAR_RESULT, FALSE, CaveofWishes_EventScript_Decline
+	goto_if_eq VAR_RESULT, TRUE, CaveOfWishes_EventScript_Accept
+    goto_if_eq VAR_RESULT, FALSE, CaveOfWishes_EventScript_Decline
 `
 script CaveOfWishes_EventScript_Greeting{
     lock
     faceplayer
-    msgbox(CaveOfWishesGreet, MSGBOX_DEFAULT)
-    waitmessage
-    call(CaveofWishes_EventScript_Check)
+    if(flag(FLAG_100_MONS_CHECK)){
+        call(CaveOfWishes_EventScript_Talk_After_Accept)
+    }
+    else{
+        msgbox(CaveOfWishesGreet, MSGBOX_DEFAULT)
+        waitmessage
+        call(CaveofWishes_EventScript_Check)
+    }
     end
 }
 
-script CaveofWishes_EventScript_Accept{
+script CaveOfWishes_EventScript_Accept{
     lock
     msgbox(CaveOfWishesAllow, MSGBOX_DEFAULT)
     waitmessage
+    setflag(FLAG_100_MONS_CHECK)
+    setflag(FLAG_LADY_MOVED)
     applymovement(1, LadyMove)
     delay(30)
     release
     end
 }
 
-script CaveofWishes_EventScript_Decline{
+script CaveOfWishes_EventScript_Decline{
     lock
     msgbox(CaveOfWishesDeny, MSGBOX_DEFAULT)
     waitmessage
@@ -36,12 +43,19 @@ script CaveofWishes_EventScript_Decline{
     end
 }
 
-text testYes{
-    "yes"
-} 
-
-text testNo{
-    "no"
+script CaveOfWishes_EventScript_Talk_After_Accept{
+    lock
+    if(flag(FLAG_LADY_MOVED)){
+        msgbox(CaveOfWishesYouMayPass,MSGBOX_DEFAULT)
+        release
+        end
+    }
+    msgbox(CaveOfWishesAllowAgain,MSGBOX_DEFAULT)
+    applymovement(1, LadyMove)
+    setflag(FLAG_LADY_MOVED)
+    delay(30)
+    release
+    end
 }
 
 text CaveOfWishesGreet{
@@ -64,6 +78,14 @@ text CaveOfWishesDeny{
     "You are still a fledgling trainer.\p"
     "Come back when you've made more bonds\n"
     "with POKéMON around the HOENN region."
+}
+
+text CaveOfWishesAllowAgain{
+    "Oh, it's you! You may pass through."
+}
+
+text CaveOfWishesYouMayPass{
+    "You may pass through."
 }
 
 movement LadyMove{

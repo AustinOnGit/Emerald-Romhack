@@ -447,7 +447,9 @@
     "RoughCaveB2",
     "DewfordMansion2",
     "DewfordMansion3",
-    "CaveOfWishes"
+    "CaveOfWishes",
+    "CaveOfWishes_B1F",
+    "CaveOfWishes_B2F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

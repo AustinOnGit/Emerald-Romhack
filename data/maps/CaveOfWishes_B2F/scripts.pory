@@ -1,0 +1,71 @@
+mapscripts CaveOfWishes_B2F_MapScripts {
+    
+}
+
+script CaveOfWishes_B2F_Rock{
+    lock
+    msgbox(CaveOfWishes_B2F_Examine_Rock, MSGBOX_DEFAULT)
+    waitmessage
+    if(flag(FLAG_JIRACHI_BATTLED)){
+        release
+        end           
+    }
+    msgbox(CaveOfWishes_B2F_Wish_Rock, MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        
+        playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+        delay(30)
+        waitmoncry
+        msgbox(CaveOfWishes_Jirachi_Appears, MSGBOX_DEFAULT)
+        waitmessage
+        setwildbattle(SPECIES_JIRACHI, 50, ITEM_COMET_SHARD)
+        special(BattleSetup_StartLegendaryBattle)
+        specialvar(VAR_RESULT, GetBattleOutcome)
+        waitstate
+        if(var(VAR_RESULT) == B_OUTCOME_WON){
+            playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+            msgbox(CaveOfWishes_Jirachi_Fled, MSGBOX_DEFAULT)
+        }
+        if(var(VAR_RESULT) == B_OUTCOME_RAN){
+            playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+            msgbox(CaveOfWishes_Jirachi_Fled, MSGBOX_DEFAULT)
+        }
+        if(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+            playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+            msgbox(CaveOfWishes_Jirachi_Fled, MSGBOX_DEFAULT)
+        }
+        setflag(FLAG_JIRACHI_BATTLED)
+        release 
+        end
+    }
+    else{
+        msgbox(CaveOfWishes_B2F_Left_Rock, MSGBOX_DEFAULT)
+        release
+        end
+    }
+}
+
+script CaveOfWishes_B2F_Rock_Jirachi_Battle{
+}
+
+text CaveOfWishes_B2F_Examine_Rock {
+    "A strange looking rock."
+}
+
+text CaveOfWishes_B2F_Wish_Rock {
+    "Make a wish on the rock?"
+}
+
+text CaveOfWishes_B2F_Left_Rock {
+    "You left the rock alone."
+}
+
+text CaveOfWishes_Jirachi_Appears{
+    "Your wish summoned JIRACHI!"
+}
+
+text CaveOfWishes_Jirachi_Fled{
+    "JIRACHI has fled.\p"
+    "Maybe you'll see it again someday...\n"
+}

@@ -247,7 +247,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "CaveOfWishes_B1F_clearflag"
+    }
   ],
   "bg_events": [
     {
