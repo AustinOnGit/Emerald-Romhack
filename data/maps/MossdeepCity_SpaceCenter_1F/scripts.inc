@@ -407,16 +407,18 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
 	.string "Ask our leader upstairs!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
-	.string "Our leader said no one, but no one,\n"
-	.string "gets past me!$"
+	.string "MAXIE tasked me with keeping\n"
+	.string "people like you out of our way!\p"
+	.string "You won't get past me!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
-	.string "Ack! Ack! Aaack!$"
+	.string "GRAAAAAAAAAAAAAAH! How could I lose\n"
+	.string "to you a third time?!"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
-	.string "Please, tell our leader that\n"
-	.string "I never abandoned my post.\l"
-	.string "That I stayed to the bitter end…$"
+	.string "I lost...\p"
+	.string "I'll never be able to show my face to\n"
+	.string "MAXIE again...$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "This is…\n"
