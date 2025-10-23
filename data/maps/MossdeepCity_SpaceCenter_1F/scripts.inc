@@ -413,7 +413,7 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
 	.string "GRAAAAAAAAAAAAAAH! How could I lose\n"
-	.string "to you a third time?!"
+	.string "to you a third time?!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
 	.string "I lost...\p"

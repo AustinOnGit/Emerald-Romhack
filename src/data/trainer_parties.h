@@ -8475,18 +8475,24 @@ static const struct TrainerMon sParty_Hector[] = {
 static const struct TrainerMon sParty_TabithaMossdeep[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 36,
-    .species = SPECIES_CAMERUPT,
+    .lvl = 51,
+    .species = SPECIES_RHYDON,
+    .heldItem = ITEM_EVIOLITE,
+    .ability = ABILITY_RECKLESS,
+    .moves = {MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_SCARY_FACE, MOVE_ICE_PUNCH}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 38,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 51,
+    .species = SPECIES_SHIFTRY,
+    .ability = ABILITY_WIND_RIDER,
+    .moves = {MOVE_TAILWIND, MOVE_LEAF_BLADE, MOVE_SUCKER_PUNCH, MOVE_HURRICANE},
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 40,
-    .species = SPECIES_GOLBAT,
+    .lvl = 52,
+    .species = SPECIES_MAROWAK_ALOLAN,
+    .moves = {MOVE_RETALIATE, MOVE_SHADOW_BONE, MOVE_FIRE_PUNCH, MOVE_STOMPING_TANTRUM},    
     }
 };
 
@@ -12548,18 +12554,25 @@ static const struct TrainerMon sParty_Darcy[] = {
 static const struct TrainerMon sParty_MaxieMossdeep[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 42,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 51,
+    .species = SPECIES_HONCHKROW,
+    .ability = ABILITY_MOXIE,
+    .moves = {MOVE_HEAT_WAVE, MOVE_ICY_WIND, MOVE_NIGHT_SLASH, MOVE_SUPERPOWER},
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 43,
-    .species = SPECIES_CROBAT,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_FLAMETHROWER, MOVE_SLUDGE_WAVE, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP},
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 44,
+    .lvl = 52,
     .species = SPECIES_CAMERUPT,
+    .heldItem = ITEM_PASSHO_BERRY,
+    .isShiny = TRUE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_YAWN, MOVE_ERUPTION, MOVE_STONE_EDGE},
     }
 };
 
