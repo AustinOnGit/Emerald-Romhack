@@ -550,6 +550,7 @@ script MoveTutor_EventScript_Mossdeep_Fighting_Tutor {
 	dynmultipush("ROCK SLIDE", 4)
 	dynmultipush("SUPERPOWER", 5)
 	dynmultipush("FAKE OUT", 6)
+	dynmultipush("ACROBATICS", 7)
     dynmultistack(0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
     switch (var(VAR_RESULT)) {
         case 0:
@@ -572,6 +573,9 @@ script MoveTutor_EventScript_Mossdeep_Fighting_Tutor {
             call(MoveTutor_EventScript_OpenPartyMenu)
         case 6:
             setvar(VAR_0x8005, MOVE_FAKE_OUT)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 7:
+            setvar(VAR_0x8005, MOVE_ACROBATICS)
             call(MoveTutor_EventScript_OpenPartyMenu)
         case MULTI_B_PRESSED:
             call(MoveTutor_EventScript_Slash_Tutor_Exit)
