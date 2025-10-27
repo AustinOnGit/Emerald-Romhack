@@ -420,6 +420,7 @@
 #define MAP_CAVE_OF_WISHES                           (120 | (24 << 8))
 #define MAP_CAVE_OF_WISHES_B1F                       (121 | (24 << 8))
 #define MAP_CAVE_OF_WISHES_B2F                       (122 | (24 << 8))
+#define MAP_GIANTS_COVE                              (123 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

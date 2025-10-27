@@ -5929,7 +5929,7 @@
               {
                 "min_level": 43,
                 "max_level": 46,
-                "species": "SPECIES_QWILFISH"
+                "species": "SPECIES_QWILFISH_HISUIAN"
               },
               {
                 "min_level": 43,
@@ -5944,7 +5944,7 @@
               {
                 "min_level": 43,
                 "max_level": 46,
-                "species": "SPECIES_QWILFISH_HISUIAN"
+                "species": "SPECIES_OVERQWIL"
               },
               {
                 "min_level": 43,
@@ -5976,119 +5976,119 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_DRAGALGE"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_DRAGALGE"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLAWITZER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLAWITZER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_WAILORD"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_WAILORD"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GRAPPLOCT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_DHELMISE"
               }
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 10,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MAREANIE"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_LUVDISC"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_LUVDISC"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TOXAPEX"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA_GALARIAN"
               },
               {
-                "min_level": 40,
-                "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GYARADOS"
               }
             ]
           }
@@ -6100,119 +6100,119 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_WAILORD"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MALAMAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MALAMAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLOBBOPUS"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLOBBOPUS"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GRAPPLOCT"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_DHELMISE"
               }
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 10,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MAREANIE"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_LUVDISC"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_SHARPEDO"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TOXAPEX"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA_GALARIAN"
               },
               {
-                "min_level": 40,
-                "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GYARADOS"
               }
             ]
           }
@@ -6289,119 +6289,119 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MALAMAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MALAMAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLOBBOPUS"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CLOBBOPUS"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GRAPPLOCT"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_DHELMISE"
               }
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 10,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MAREANIE"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_LUVDISC"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_SHARPEDO"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TOXAPEX"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA_GALARIAN"
               },
               {
-                "min_level": 40,
-                "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GYARADOS"
               }
             ]
           }
@@ -6413,119 +6413,119 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MALAMAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_MALAMAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KILOWATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_SEADRA"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_SEADRA"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_SEADRA"
+              },
+              {
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_DHELMISE"
               }
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 10,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CARVANHA"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_LUVDISC"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CARVANHA"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 43,
+                "max_level": 46,
                 "species": "SPECIES_SHARPEDO"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_CORSOLA_GALARIAN"
               },
               {
-                "min_level": 40,
-                "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "min_level": 43,
+                "max_level": 46,
+                "species": "SPECIES_GYARADOS"
               }
             ]
           }

@@ -1775,6 +1775,14 @@
       "y": 3,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_GIANTS_COVE",
+      "name": "GIANT'S COVE",
+      "x": 17,
+      "y": 9,
+      "width": 1,
+      "height": 1
     }
   ]
 }

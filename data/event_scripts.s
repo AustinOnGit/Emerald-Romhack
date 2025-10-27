@@ -1114,3 +1114,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CaveOfWishes_B1F/scripts.inc"
 
 	.include "data/maps/CaveOfWishes_B2F/scripts.inc"
+
+	.include "data/maps/GiantsCove/scripts.inc"

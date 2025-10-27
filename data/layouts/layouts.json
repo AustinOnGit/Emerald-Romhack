@@ -4620,6 +4620,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveOfWishes_B2F/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfWishes_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIANTS_COVE",
+      "name": "GiantsCove_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GiantsCove/border.bin",
+      "blockdata_filepath": "data/layouts/GiantsCove/map.bin"
     }
   ]
 }
