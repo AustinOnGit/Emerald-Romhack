@@ -733,3 +733,4 @@ Route111_Text_TrainerHillSign:
 
 Route111_Text_RoughCaveSign:
 	.string "{LEFT_ARROW} ROUGH CAVE ENTRANCE$"
+	

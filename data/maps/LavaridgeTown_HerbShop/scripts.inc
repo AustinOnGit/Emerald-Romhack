@@ -85,3 +85,4 @@ LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:
 LavaridgeTown_HerbShop_Text_HerbShopTeaCups:
 	.string "Although this is the HERB SHOP, we sell\n"
 	.string "antique teacups as well.$"
+	

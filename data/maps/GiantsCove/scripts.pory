@@ -1,0 +1,113 @@
+mapscripts GiantsCove_MapScripts {
+    MAP_SCRIPT_ON_LOAD: GiantsCove_OnLoad
+}
+
+script GiantsCove_OnLoad {
+    call_if_unset(FLAG_REGI_DOORS_OPENED, HideEntrance)
+}
+
+script HideEntrance {
+    setmetatile(7, 19, METATILE_Cave_EntranceCover, TRUE)
+    setmetatile(8, 19, METATILE_Cave_EntranceCover, TRUE)
+    setmetatile(9, 19, METATILE_Cave_EntranceCover, TRUE)
+    setmetatile(7, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+    setmetatile(8, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+    setmetatile(9, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+}
+
+script CaveEntrance_Middle{
+    lockall
+    goto_if_set(FLAG_REGI_DOORS_OPENED, CaveEntrance_Open)
+    msgbox(CaveSign, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script CaveEntrance_Sides{
+    lockall
+    msgbox(CaveSign, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script CaveEntrance_Open{
+    msgbox("There's a hole in the wall.", MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+
+script RegigigasExamine{
+    lock 
+    faceplayer
+    if(flag(FLAG_DEFEATED_REGIROCK) && flag(FLAG_DEFEATED_REGICE) && flag(FLAG_DEFEATED_REGISTEEL)){
+        playmoncry(SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER)
+        delay(30)
+        waitmoncry
+        msgbox(RegigigasAwakens, MSGBOX_DEFAULT)
+        waitmessage
+        setwildbattle(SPECIES_REGIGIGAS, 70, ITEM_COMET_SHARD)
+        special(StartRegiBattle)
+        specialvar(VAR_RESULT, GetBattleOutcome)
+        waitstate
+        if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+            call(RegigigasWin)
+        }
+        if(var(VAR_RESULT) == B_OUTCOME_WON){
+            playmoncry(SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER)
+            call(RegigigasWin)
+            msgbox(RegigigasDefeated, MSGBOX_DEFAULT)
+            waitmessage
+        }
+        if(var(VAR_RESULT) == B_OUTCOME_RAN){
+            call(RegigigasFlee)
+            waitmessage
+        }
+        if(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+            call(RegigigasFlee)
+            waitmessage
+        }
+        setflag(FLAG_REGIGIGAS_BATTLED)
+        release 
+        end
+    }
+    else{
+        msgbox(RegigigasSleep, MSGBOX_DEFAULT)
+        release
+        end
+    }
+}
+
+script RegigigasWin{
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    fadescreen(FADE_FROM_BLACK)
+    return
+}
+
+script RegigigasFlee{
+    playmoncry(SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER)
+    delay(30)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(RegigigasDefeated)
+    return
+}
+
+text RegigigasAwakens{
+    "REGIGIGAS has awakened!"
+}
+
+text RegigigasSleep{
+    "The giant does not wake."
+}
+
+text RegigigasDefeated{
+    "Regigigas has fled."
+}
+
+text CaveSign{
+    "UNDER THE WAVES LIES THE SECRET\n"
+    "SEEK THE GOLEMS TO AWAKEN THE GIANT"
+}

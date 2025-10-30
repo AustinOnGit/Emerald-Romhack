@@ -1018,19 +1018,19 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("SEASOR"),
-        .species = SPECIES_HORSEA,
+        .nickname = _("Seasor"),
+        .species = SPECIES_SEADRA,
         .ivs = {5, 4, 4, 4, 5, 4},
         .abilityNum = 0,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,
-        .heldItem = ITEM_WAVE_MAIL,
-        .mailNum = 1,
+        .heldItem = ITEM_DRAGON_SCALE,
+        .mailNum = -1,
         .otName = _("SKYLAR"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_BAGON
+        .requestedSpecies = SPECIES_GOOMY
     },
     [INGAME_TRADE_MEOWTH] =
     {
@@ -1079,6 +1079,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_MURKROW
+    },
+    [INGAME_TRADE_MAWILE] =
+    {
+        .nickname = _("Big Mouth"),
+        .species = SPECIES_MAWILE,
+        .ivs = {15, 16, 15, 17, 14, 18},
+        .abilityNum = 1,
+        .otId = 58721,
+        .conditions = {5, 30, 5, 5, 5},
+        .personality = 0x6A,
+        .heldItem = ITEM_CLEAR_AMULET,
+        .mailNum = -1,
+        .otName = _("EMMA"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_HAWLUCHA
     },
 };
 

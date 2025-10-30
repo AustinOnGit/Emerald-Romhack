@@ -11,6 +11,7 @@
 #define INGAME_TRADE_MEOWTH 3
 #define INGAME_TRADE_MAREEP 4
 #define INGAME_TRADE_HOOTHOOT 5
+#define INGAME_TRADE_MAWILE 6
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0

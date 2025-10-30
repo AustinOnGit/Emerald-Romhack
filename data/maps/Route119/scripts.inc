@@ -623,3 +623,4 @@ Route119_Text_TrainerTipsDecoration:
 
 Route119_Text_BrendanMayThisToo:
 	.string "Have this, too.$"
+	

@@ -56,8 +56,8 @@
 #define FLAG_100_MONS_CHECK    0x2B // Unused Flag
 #define FLAG_LADY_MOVED        0x2C // Unused Flag
 #define FLAG_JIRACHI_BATTLED    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
+#define FLAG_REGIGIGAS_BATTLED    0x2E // Unused Flag
+#define FLAG_ROUTE124_HOUSE_TRADE_COMPLETED    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
