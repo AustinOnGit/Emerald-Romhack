@@ -178,9 +178,9 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
+	.string "SOOTOPOLIS's GYM LEADER WALLACE is\n"
 	.string "a master of WATER-type POKéMON.\p"
-	.string "And, to get to JUAN, an icy floor\n"
+	.string "And, to get to WALLACE, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
@@ -188,53 +188,39 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even JUAN, who\n"
+	.string "Yow! You've beaten even WALLACE, who\n"
 	.string "was supposedly the best in all HOENN!\p"
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "Let me ask you.\n"
-	.string "Did you know?\l"
-	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught WALLACE everything\n"
-	.string "there is to know about POKéMON.\p"
-	.string "Once, I had given up my position as\n"
-	.string "the GYM LEADER.\p"
-	.string "In my place, I had entrusted WALLACE\n"
-	.string "with the GYM.\p"
-	.string "However, a compelling reason arose for\n"
-	.string "me to make a comeback.\p"
-	.string "Ah, but enough chatter.\n"
-	.string "Let us begin our match, shall we?\p"
-	.string "Please, you shall bear witness to\n"
-	.string "our artistry.\p"
-	.string "A grand illusion of water sculpted\n"
-	.string "by POKéMON and myself!$"
+	.string "There's something about you…\p"
+	.string "A difference in your demeanor.\n"
+	.string "I think I sense that in you.\p"  
+	.string "What happened at the Sky Pillar,\n"
+	.string "and what you did , I will likely\l" 
+	.string "learn through our upcoming battle.\p" 
+	.string "Now, show me. Show me the power you wield\n" 
+	.string "with your POKéMON. And I, in turn, shall\l" 
+	.string "present you with a performance of\l"
+	.string "illusions in water by me and my POKéMON!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "Ahahaha, excellent!\n"
-	.string "Very well, you are the winner.\p"
-	.string "From you, I sense the brilliant shine\n"
-	.string "of skill that will overcome all.\p"
-	.string "However, compared with me or even\n"
-	.string "WALLACE, you are lacking in elegance.\p"
-	.string "Perhaps I should make you a loan\n"
-	.string "of my outfit?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Hahaha, I merely jest!\p"
-	.string "Rather than my clothes, I shall reward\n"
-	.string "you with this, the RAIN BADGE!$"
+	.string "Bravo. I realize now your authenticity\n" 
+	.string "and magnificence as a POKéMON Trainer.\p" 
+	.string "I find much joy in having met you\n" 
+	.string "and your POKéMON. You have proven\l"
+	.string "yourself worthy of the RAIN BADGE.\l" 
+	.string "Accept it.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN BADGE\n"
-	.string "from JUAN.$"
+	.string "from WALLACE.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the RAIN BADGE shall assure you\n"
@@ -254,7 +240,7 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered GYM LEADER JUAN\n"
+	.string "Registered GYM LEADER WALLACE\n"
 	.string "in the POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
@@ -279,7 +265,7 @@ SootopolisCity_Gym_1F_Text_GymStatue:
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "SOOTOPOLIS CITY POKéMON GYM\p"
-	.string "JUAN'S CERTIFIED TRAINERS:\n"
+	.string "WALLACE'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:

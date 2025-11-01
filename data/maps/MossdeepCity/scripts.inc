@@ -425,7 +425,9 @@ MossdeepCity_Text_ScottSomethingWrongWithTown:
 
 MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "Ahh… It feels great letting the waves\n"
-	.string "wash over my feet…\p"
+	.string "wash over my feet…$"
+
+MossdeepCity_Text_unused:
 	.string "Speaking of the waves, you know that\n"
 	.string "island city SOOTOPOLIS?\p"
 	.string "I think the GYM there had a new\n"

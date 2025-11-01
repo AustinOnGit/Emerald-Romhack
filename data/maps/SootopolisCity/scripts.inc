@@ -1312,9 +1312,23 @@ SootopolisCity_EventScript_GiveWaterfall::
 	setflag FLAG_RECEIVED_HM_WATERFALL
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
+	call SootopolisCity_EventScript_WallaceEnterGym
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym
 	call_if_eq VAR_FACING, DIR_EAST, SootopolisCity_EventScript_WallaceMoveFromGym
 	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_WallaceMoveFromGymWest
+	release
+	end
+
+SootopolisCity_EventScript_WallaceEnterGym::
+	applymovement LOCALID_WALLACE, SootopolisCity_Movement_WallaceMoveIntoGym1
+	opendoor 31, 32
+	waitdooranim
+	applymovement LOCALID_WALLACE, SootopolisCity_Movement_WallaceMoveIntoGym2,
+	waitmovement 0
+	removeobject LOCALID_WALLACE
+	closedoor 31, 32
+	waitdooranim
 	release
 	end
 
@@ -1350,6 +1364,14 @@ SootopolisCity_Movement_WallaceMoveFromGym:
 SootopolisCity_Movement_WallaceMoveFromGymWest:
 	walk_left
 	walk_in_place_faster_down
+	step_end
+
+SootopolisCity_Movement_WallaceMoveIntoGym1:
+	face_up
+	step_end
+
+SootopolisCity_Movement_WallaceMoveIntoGym2:
+	walk_up
 	step_end
 
 SootopolisCity_EventScript_Maxie::

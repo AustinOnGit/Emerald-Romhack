@@ -404,7 +404,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("SHELLY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_ShellySeafloorCavern),
     },
 
@@ -414,9 +414,9 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
         .trainerName = _("ARCHIE"),
-        .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
         .party = TRAINER_PARTY(sParty_Archie),
     },
 
@@ -3268,9 +3268,9 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
-        .trainerName = _("JUAN"),
-        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
+        .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
+        .trainerName = _("WALLACE"),
+        .items = {ITEM_MAX_POTION, ITEM_MAX_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
         .party = TRAINER_PARTY(sParty_Juan1),
@@ -10320,4 +10320,15 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Yoshida),
     },
 
+    [TRAINER_HORACE] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerName = _("HORACE"),
+        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_PREFER_STATUS_MOVES | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_Horace),
+    },
 };

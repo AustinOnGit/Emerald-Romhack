@@ -33,7 +33,6 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	applymovement VAR_0x8004, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
 	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
 	setweather WEATHER_NONE
 	doweather
@@ -69,6 +68,8 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
+	delay 30
+	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
 	applymovement LOCALID_KYOGRE, SeafloorCavern_Room9_Movement_KyogreExit
 	waitmovement 0
 	removeobject LOCALID_KYOGRE
@@ -251,6 +252,10 @@ SeafloorCavern_Room9_Text_ArchieDefeat:
 	.string "I lost to a mere child like you?!$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
+	.string "I have this in my possession!\p"
+	.string "With this RED ORB, I can make KYOGRE…$"
+
+SeafloorCavern_Room9_Text_ArchieWithThisRedOrb1:
 	.string "ARCHIE: Fufufu…\p"
 	.string "I commend you. I must recognize that\n"
 	.string "you are truly gifted.\p"
