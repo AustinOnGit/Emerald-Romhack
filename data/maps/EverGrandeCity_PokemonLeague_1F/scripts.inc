@@ -45,6 +45,10 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_FOCUS_SASH
+	.2byte ITEM_COVERT_CLOAK
+	.2byte ITEM_AIR_BALLOON
+	.2byte ITEM_HEAVY_DUTY_BOOTS
 	.2byte ITEM_NONE
 	release
 	end

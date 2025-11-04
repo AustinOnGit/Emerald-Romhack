@@ -27,6 +27,7 @@ text JimmyBeaten{
 script DeepPetalburgWoods_EventScript_Eustace_Battle{
     trainerbattle_single(TRAINER_EUSTACE, EustaceIntro, EustaceOutro)
     msgbox(EustaceBeaten, MSGBOX_AUTOCLOSE)
+    setflag(FLAG_EUSTACE_BEATEN)
     waitmessage
     end
 }

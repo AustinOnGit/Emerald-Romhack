@@ -1116,3 +1116,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CaveOfWishes_B2F/scripts.inc"
 
 	.include "data/maps/GiantsCove/scripts.inc"
+
+	.include "data/maps/EverGrandCity_House1/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_House2/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_House3/scripts.inc"

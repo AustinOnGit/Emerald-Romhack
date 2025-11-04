@@ -5,6 +5,7 @@ mapscripts VerdanturfSanctuary_MapScripts {
 script VerdanturfSanctuary_EventScript_Lacey_Battle{
     trainerbattle_single(TRAINER_LACEY, LaceyIntro, LaceyOutro)
     msgbox(LaceyBeaten, MSGBOX_AUTOCLOSE)
+    setflag(FLAG_LACEY_BEATEN)
     waitmessage
     end
 }

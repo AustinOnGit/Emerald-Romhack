@@ -107,19 +107,21 @@ Route129_EventScript_Horace::
 # 57 "data/maps/Route129/scripts.pory"
 	msgbox HoraceBeaten, MSGBOX_AUTOCLOSE
 # 58 "data/maps/Route129/scripts.pory"
+	setflag FLAG_HORACE_BEATEN
+# 59 "data/maps/Route129/scripts.pory"
 	waitmessage
 	end
 
 
 HoraceIntro::
-# 62 "data/maps/Route129/scripts.pory"
+# 63 "data/maps/Route129/scripts.pory"
 	.string "I'll wear you down with my sandstorm!$"
 
 HoraceOutro::
-# 66 "data/maps/Route129/scripts.pory"
+# 67 "data/maps/Route129/scripts.pory"
 	.string "Gah. I got sand in my eyes.$"
 
 HoraceBeaten::
-# 70 "data/maps/Route129/scripts.pory"
+# 71 "data/maps/Route129/scripts.pory"
 	.string "Training out here all by myself has\n"
 	.string "made me a little homesick...$"

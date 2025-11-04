@@ -5,6 +5,7 @@ static const struct TrainerMon sParty_StevenPartner[] = {
         .nature = NATURE_BRAVE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 6, 0),
+        .isShiny = TRUE,
         .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC_FANGS, MOVE_REFLECT, MOVE_IRON_HEAD},
     },
     {

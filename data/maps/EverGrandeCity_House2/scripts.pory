@@ -1,0 +1,33 @@
+raw`
+EverGrandeCity_House2_MapScripts::
+	.byte 0
+
+`
+
+script EverGrandCity_House2_EventScript_Maniac{
+    lock
+    faceplayer
+    msgbox(ManiacText, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script EverGrandCity_House2_EventScript_Girl{
+    lock
+    faceplayer
+    msgbox(GirlText, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text ManiacText{
+    "You made it through VICTORY ROAD?\p"
+    "Kehehehe... Good luck with beating\n"
+    "the ELITE FOUR..."
+}
+
+text GirlText{
+    "I heard there's a new member of the\n"
+    "ELITE FOUR now. One of the previous\l"
+    "members became a GYM LEADER somwhere."
+}

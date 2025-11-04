@@ -18,6 +18,8 @@ DeepPetalburgWoods_EventScript_Eustace_Battle::
 # 29 "data/maps/DeepPetalburgWoods/scripts.pory"
 	msgbox EustaceBeaten, MSGBOX_AUTOCLOSE
 # 30 "data/maps/DeepPetalburgWoods/scripts.pory"
+	setflag FLAG_EUSTACE_BEATEN
+# 31 "data/maps/DeepPetalburgWoods/scripts.pory"
 	waitmessage
 	end
 
@@ -38,16 +40,16 @@ JimmyBeaten::
 	.string "POKéMON!$"
 
 EustaceIntro::
-# 35 "data/maps/DeepPetalburgWoods/scripts.pory"
+# 36 "data/maps/DeepPetalburgWoods/scripts.pory"
 	.string "Haha! Behold the the power of my\n"
 	.string "rainstorm team!$"
 
 EustaceOutro::
-# 40 "data/maps/DeepPetalburgWoods/scripts.pory"
+# 41 "data/maps/DeepPetalburgWoods/scripts.pory"
 	.string "My storm petered out.$"
 
 EustaceBeaten::
-# 44 "data/maps/DeepPetalburgWoods/scripts.pory"
+# 45 "data/maps/DeepPetalburgWoods/scripts.pory"
 	.string "My goal is to be as amazing as the\n"
 	.string "great GYM LEADER WALLACE.\p"
 	.string "Guess I still have a lot of\n"

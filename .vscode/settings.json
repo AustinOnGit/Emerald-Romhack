@@ -2,5 +2,6 @@
     "files.associations": {
         "songs.h": "c",
         "link.h": "c"
-    }
+    },
+    "makefile.configureOnOpen": true
 }

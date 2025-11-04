@@ -5,6 +5,7 @@ mapscripts RoughCaveB2_MapScripts {
 script RoughCaveB2_EventScript_AnelaceBattle{
     trainerbattle_single(TRAINER_ANELACE, AnelaceIntro, AnelaceOutro)
     msgbox(AnelaceBeaten, MSGBOX_AUTOCLOSE)
+    setflag(FLAG_ANELACE_BEATEN)
     waitmessage
     end
 }

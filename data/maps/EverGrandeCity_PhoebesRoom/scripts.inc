@@ -59,6 +59,18 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
+	.string "Hey there, challenger!\p"
+	.string "I'm BRAWLY, the newest member of\n"
+	.string "the ELITE FOUR!\p"
+	.string "I used to run the GYM back in DEWFORD\n"
+	.string "TOWN, but I decided it was time for me\l"
+	.string "to challenge myself even more.\p"
+	.string "I've been doing some intense training,\n"
+	.string "so I hope you're ready for the beatdown\l"
+	.string "my FIGHTING-type POKéMON are gonna\l" 
+	.string "give you!$"
+
+EverGrandeCity_PhoebesRoom_Text_IntroSpeechunused:
 	.string "Ahahaha!\p"
 	.string "I'm PHOEBE of the ELITE FOUR.\n"
 	.string "I did my training on MT. PYRE.\p"
@@ -70,6 +82,9 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "even inflict damage on my POKéMON!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
+	.string "Whoah, wow! What a wipeout!$"
+
+EverGrandeCity_PhoebesRoom_Text_Defeatunused:
 	.string "Oh, darn.\n"
 	.string "I've gone and lost.$"
 

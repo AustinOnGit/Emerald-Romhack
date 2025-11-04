@@ -582,6 +582,71 @@ script MoveTutor_EventScript_Mossdeep_Fighting_Tutor {
     }
 }
 
+script MoveTutor_EventScript_EverGrandeCity_Tutor {
+    lock
+    faceplayer
+    msgbox (MoveTutor_Text_HotSpring_Tutor_Select, MSGBOX_DEFAULT)
+    dynmultipush("FLARE BLITZ", 0)
+    dynmultipush("FLIP TURN", 1)
+    dynmultipush("ENERGY BALL", 2)
+	dynmultipush("EARTH POWER", 3)
+    dynmultipush("GRASSY GLIDE", 4)
+	dynmultipush("EXPANDING FORCE", 5)
+	dynmultipush("MISTY EXPLOSION", 6)
+	dynmultipush("RISING VOLTAGE", 7)
+	dynmultipush("BLAST BURN", 8)
+	dynmultipush("FRENZY PLANT", 9)
+	dynmultipush("HYDRO CANNON", 10)
+	dynmultipush("DRACO METEOR", 11)
+    dynmultistack(0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+    switch (var(VAR_RESULT)) {
+        case 0:
+            setvar(VAR_0x8005, MOVE_FLARE_BLITZ)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 1:
+            setvar(VAR_0x8005, MOVE_FLIP_TURN)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 2:
+            setvar(VAR_0x8005, MOVE_ENERGY_BALL)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 3:
+            setvar(VAR_0x8005, MOVE_EARTH_POWER)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 4:
+            setvar(VAR_0x8005, MOVE_GRASSY_GLIDE)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 5:
+            setvar(VAR_0x8005, MOVE_EXPANDING_FORCE)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 6:
+            setvar(VAR_0x8005, MOVE_MISTY_EXPLOSION)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case 7:
+            setvar(VAR_0x8005, MOVE_RISING_VOLTAGE)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 8:
+            setvar(VAR_0x8005, MOVE_BLAST_BURN)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 9:
+            setvar(VAR_0x8005, MOVE_FRENZY_PLANT)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 10:
+            setvar(VAR_0x8005, MOVE_HYDRO_CANNON)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+		case 11:
+            setvar(VAR_0x8005, MOVE_DRACO_METEOR)
+            call(MoveTutor_EventScript_OpenPartyMenu)
+        case MULTI_B_PRESSED:
+            call(MoveTutor_EventScript_Slash_Tutor_Exit)
+    }
+}
+
+script Move_Tutor_Eventscript_EverGrandeCity_Exit{
+    msgbox (OldLadySafeJourney, MSGBOX_DEFAULT)
+    release
+    end
+}
+
 script SlateportCity_PokemonFanClub_Tutor{
 	faceplayer
 	lock

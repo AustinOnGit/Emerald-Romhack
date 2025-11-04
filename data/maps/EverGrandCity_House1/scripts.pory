@@ -1,0 +1,88 @@
+raw `
+EverGrandCity_House1_MapScripts::
+	.byte 0
+`
+
+script EverGrandCity_House1_EventScript_OldLady{
+    lock
+    faceplayer
+    if(flag(FLAG_EVERGRANDECITY_TUTOR)){
+        msgbox(OldLadyWelcomeBack, MSGBOX_DEFAULT)
+        waitmessage
+        call(MoveTutor_EventScript_EverGrandeCity_Tutor)
+    }
+    else{
+        msgbox(OldLadyIntroduction,MSGBOX_YESNO)
+        if(var(VAR_RESULT)== YES){
+            setflag(FLAG_EVERGRANDECITY_TUTOR)
+            msgbox(OldLadyAccept, MSGBOX_DEFAULT)
+            waitmessage
+            call(MoveTutor_EventScript_EverGrandeCity_Tutor)
+        }
+        else{
+            msgbox(OldLadyDecline, MSGBOX_DEFAULT)
+            release
+	        end 
+        }
+    }
+    msgbox(OldLadySafeJourney)
+    release
+    end 
+}
+
+script EverGrandCity_House1_EventScript_OldLady2{
+    lock
+    faceplayer
+    if(flag(FLAG_EVER_GRANDE_CITY_ABILITY_PATCH_RECIEVED)){
+        msgbox(OldLady2)
+        release 
+        end
+    }
+    else{
+        msgbox(OldLady2AbilityPatch,MSGBOX_DEFAULT)
+        waitmessage 
+        giveitem(ITEM_ABILITY_PATCH)
+        goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+        setflag(FLAG_EVER_GRANDE_CITY_ABILITY_PATCH_RECIEVED)
+        msgbox(OldLady2)
+        release 
+        end
+    }
+}
+   
+
+text OldLadyIntroduction{
+    "Oh hello. We don't get too many\n"
+    "visitors around here. Are you here\l"
+    "to challenge the ELITE FOUR?"
+}
+
+text OldLadyWelcomeBack{
+    "Welcome back!"
+}
+
+text OldLadySafeJourney{
+    "Have a safe journey."
+}
+
+text OldLadyAccept{
+    "Ah! I can teach you powerful moves\n"
+    "to challenge them."
+}
+
+text OldLadyDecline{
+    "I see. Well, have a safe journey."
+}
+
+text OldLady2{
+    "There's a lot of strong trainers on\n"
+    "VICTORY ROAD.\p" 
+    "Make sure you're prepared to face\n"
+    "great challenges before you enter."
+}
+
+text OldLady2AbilityPatch{
+    "You must have come a long way to get\n"
+    "here. If you're going to challenge the\l"
+    "ELITE FOUR, maybe this will help."
+}

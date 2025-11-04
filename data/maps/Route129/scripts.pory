@@ -55,6 +55,7 @@ Route129_EventScript_Clarence::
 script Route129_EventScript_Horace{
     trainerbattle_single(TRAINER_HORACE, HoraceIntro, HoraceOutro)
     msgbox(HoraceBeaten, MSGBOX_AUTOCLOSE)
+	setflag(FLAG_HORACE_BEATEN)
     waitmessage
     end
 }

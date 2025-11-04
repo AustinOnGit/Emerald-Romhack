@@ -1310,116 +1310,277 @@ MoveTutor_EventScript_Mossdeep_Fighting_Tutor_10:
 	return
 
 
-SlateportCity_PokemonFanClub_Tutor::
+MoveTutor_EventScript_EverGrandeCity_Tutor::
 # 586 "data/scripts/move_tutors.pory"
-	faceplayer
-# 587 "data/scripts/move_tutors.pory"
 	lock
+# 587 "data/scripts/move_tutors.pory"
+	faceplayer
 # 588 "data/scripts/move_tutors.pory"
-	msgbox SlateportCity_PokemonFanClub_Tutor_Intro, MSGBOX_DEFAULT
+	msgbox MoveTutor_Text_HotSpring_Tutor_Select, MSGBOX_DEFAULT
 # 589 "data/scripts/move_tutors.pory"
-	waitmessage
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_0, 0
 # 590 "data/scripts/move_tutors.pory"
-	call MoveTutor_EventScript_Slateport_Tutor
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_1, 1
 # 591 "data/scripts/move_tutors.pory"
-	msgbox SlateportCity_PokemonFanClub_Tutor_Outro2
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_2, 2
 # 592 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_3, 3
+# 593 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_4, 4
+# 594 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_5, 5
+# 595 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_6, 6
+# 596 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_7, 7
+# 597 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_8, 8
+# 598 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_9, 9
+# 599 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_10, 10
+# 600 "data/scripts/move_tutors.pory"
+	dynmultipush MoveTutor_EventScript_EverGrandeCity_Tutor_Text_11, 11
+# 601 "data/scripts/move_tutors.pory"
+	dynmultistack 0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 602 "data/scripts/move_tutors.pory"
+	switch VAR_RESULT
+# 603 "data/scripts/move_tutors.pory"
+	case 0, MoveTutor_EventScript_EverGrandeCity_Tutor_2
+# 606 "data/scripts/move_tutors.pory"
+	case 1, MoveTutor_EventScript_EverGrandeCity_Tutor_3
+# 609 "data/scripts/move_tutors.pory"
+	case 2, MoveTutor_EventScript_EverGrandeCity_Tutor_4
+# 612 "data/scripts/move_tutors.pory"
+	case 3, MoveTutor_EventScript_EverGrandeCity_Tutor_5
+# 615 "data/scripts/move_tutors.pory"
+	case 4, MoveTutor_EventScript_EverGrandeCity_Tutor_6
+# 618 "data/scripts/move_tutors.pory"
+	case 5, MoveTutor_EventScript_EverGrandeCity_Tutor_7
+# 621 "data/scripts/move_tutors.pory"
+	case 6, MoveTutor_EventScript_EverGrandeCity_Tutor_8
+# 624 "data/scripts/move_tutors.pory"
+	case 7, MoveTutor_EventScript_EverGrandeCity_Tutor_9
+# 627 "data/scripts/move_tutors.pory"
+	case 8, MoveTutor_EventScript_EverGrandeCity_Tutor_10
+# 630 "data/scripts/move_tutors.pory"
+	case 9, MoveTutor_EventScript_EverGrandeCity_Tutor_11
+# 633 "data/scripts/move_tutors.pory"
+	case 10, MoveTutor_EventScript_EverGrandeCity_Tutor_12
+# 636 "data/scripts/move_tutors.pory"
+	case 11, MoveTutor_EventScript_EverGrandeCity_Tutor_13
+# 639 "data/scripts/move_tutors.pory"
+	case MULTI_B_PRESSED, MoveTutor_EventScript_EverGrandeCity_Tutor_14
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_2:
+# 604 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_FLARE_BLITZ
+# 605 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_3:
+# 607 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_FLIP_TURN
+# 608 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_4:
+# 610 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_ENERGY_BALL
+# 611 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_5:
+# 613 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_EARTH_POWER
+# 614 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_6:
+# 616 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
+# 617 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_7:
+# 619 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_EXPANDING_FORCE
+# 620 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_8:
+# 622 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_MISTY_EXPLOSION
+# 623 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_9:
+# 625 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_RISING_VOLTAGE
+# 626 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_10:
+# 628 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_BLAST_BURN
+# 629 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_11:
+# 631 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_FRENZY_PLANT
+# 632 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_12:
+# 634 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_HYDRO_CANNON
+# 635 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_13:
+# 637 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_DRACO_METEOR
+# 638 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+	return
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_14:
+# 640 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_Slash_Tutor_Exit
+	return
+
+
+Move_Tutor_Eventscript_EverGrandeCity_Exit::
+# 645 "data/scripts/move_tutors.pory"
+	msgbox OldLadySafeJourney, MSGBOX_DEFAULT
+# 646 "data/scripts/move_tutors.pory"
+	release
+	end
+
+
+SlateportCity_PokemonFanClub_Tutor::
+# 651 "data/scripts/move_tutors.pory"
+	faceplayer
+# 652 "data/scripts/move_tutors.pory"
+	lock
+# 653 "data/scripts/move_tutors.pory"
+	msgbox SlateportCity_PokemonFanClub_Tutor_Intro, MSGBOX_DEFAULT
+# 654 "data/scripts/move_tutors.pory"
+	waitmessage
+# 655 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_Slateport_Tutor
+# 656 "data/scripts/move_tutors.pory"
+	msgbox SlateportCity_PokemonFanClub_Tutor_Outro2
+# 657 "data/scripts/move_tutors.pory"
 	release
 	end
 
 
 SlateportCity_PokemonFanClub_Tutor_Exit::
-# 597 "data/scripts/move_tutors.pory"
+# 662 "data/scripts/move_tutors.pory"
 	msgbox SlateportCity_PokemonFanClub_Tutor_Outro, MSGBOX_DEFAULT
-# 598 "data/scripts/move_tutors.pory"
+# 663 "data/scripts/move_tutors.pory"
 	release
 	end
 
 
 MauvilleCity_Rolling_Tutor::
-# 603 "data/scripts/move_tutors.pory"
+# 668 "data/scripts/move_tutors.pory"
 	faceplayer
-# 604 "data/scripts/move_tutors.pory"
+# 669 "data/scripts/move_tutors.pory"
 	lock
-# 605 "data/scripts/move_tutors.pory"
+# 670 "data/scripts/move_tutors.pory"
 	msgbox MauvilleCity_Rolling_Tutor_Intro, MSGBOX_DEFAULT
-# 606 "data/scripts/move_tutors.pory"
+# 671 "data/scripts/move_tutors.pory"
 	waitmessage
-# 607 "data/scripts/move_tutors.pory"
+# 672 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_Mauville_Tutor
-# 608 "data/scripts/move_tutors.pory"
+# 673 "data/scripts/move_tutors.pory"
 	msgbox MauvilleCity_Rolling_Tutor_Outro2
-# 609 "data/scripts/move_tutors.pory"
+# 674 "data/scripts/move_tutors.pory"
 	release
 	end
 
 
 MauvilleCity_Rolling_Tutor_Exit::
-# 614 "data/scripts/move_tutors.pory"
+# 679 "data/scripts/move_tutors.pory"
 	msgbox MauvilleCity_Rolling_Tutor_Outro, MSGBOX_DEFAULT
-# 615 "data/scripts/move_tutors.pory"
+# 680 "data/scripts/move_tutors.pory"
 	release
 	end
 
 
 MossdeepCity_Fighting_Tutor::
-# 620 "data/scripts/move_tutors.pory"
+# 685 "data/scripts/move_tutors.pory"
 	faceplayer
-# 621 "data/scripts/move_tutors.pory"
+# 686 "data/scripts/move_tutors.pory"
 	lock
-# 622 "data/scripts/move_tutors.pory"
+# 687 "data/scripts/move_tutors.pory"
 	goto_if_set FLAG_MOSSDEEP_TUTOR_BEATEN, MossdeepCity_Fighting_Tutor_2
-# 628 "data/scripts/move_tutors.pory"
+# 693 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Meeting, MSGBOX_DEFAULT
-# 629 "data/scripts/move_tutors.pory"
+# 694 "data/scripts/move_tutors.pory"
 	waitmessage
-# 630 "data/scripts/move_tutors.pory"
+# 695 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Propose_Battle, MSGBOX_YESNO
-# 631 "data/scripts/move_tutors.pory"
+# 696 "data/scripts/move_tutors.pory"
 	waitmessage
-# 632 "data/scripts/move_tutors.pory"
+# 697 "data/scripts/move_tutors.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MossdeepCity_Fighting_Tutor_5
-# 641 "data/scripts/move_tutors.pory"
+# 706 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Decline_Battle, MSGBOX_DEFAULT
-# 642 "data/scripts/move_tutors.pory"
+# 707 "data/scripts/move_tutors.pory"
 	release
 	end
 
 MossdeepCity_Fighting_Tutor_1:
-# 647 "data/scripts/move_tutors.pory"
+# 712 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Outro2
-# 648 "data/scripts/move_tutors.pory"
+# 713 "data/scripts/move_tutors.pory"
 	release
 	end
 
 MossdeepCity_Fighting_Tutor_2:
-# 623 "data/scripts/move_tutors.pory"
+# 688 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Intro, MSGBOX_DEFAULT
-# 624 "data/scripts/move_tutors.pory"
+# 689 "data/scripts/move_tutors.pory"
 	waitmessage
-# 625 "data/scripts/move_tutors.pory"
+# 690 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_Mossdeep_Fighting_Tutor
 	goto MossdeepCity_Fighting_Tutor_1
 
 MossdeepCity_Fighting_Tutor_5:
-# 633 "data/scripts/move_tutors.pory"
+# 698 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Accept_Battle, MSGBOX_DEFAULT
-# 634 "data/scripts/move_tutors.pory"
+# 699 "data/scripts/move_tutors.pory"
 	trainerbattle_no_intro TRAINER_YOSHIDA, MossdeepCity_Fighting_Tutor_Battle_End
-# 635 "data/scripts/move_tutors.pory"
+# 700 "data/scripts/move_tutors.pory"
 	setflag FLAG_MOSSDEEP_TUTOR_BEATEN
-# 636 "data/scripts/move_tutors.pory"
+# 701 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_After_Battle, MSGBOX_DEFAULT
-# 637 "data/scripts/move_tutors.pory"
+# 702 "data/scripts/move_tutors.pory"
 	release
 	end
 
 
 MossdeepCity_Fighting_Tutor_Exit::
-# 653 "data/scripts/move_tutors.pory"
+# 718 "data/scripts/move_tutors.pory"
 	msgbox MossdeepCity_Fighting_Tutor_Outro, MSGBOX_DEFAULT
-# 654 "data/scripts/move_tutors.pory"
+# 719 "data/scripts/move_tutors.pory"
 	release
 	end
 
@@ -1600,37 +1761,85 @@ MoveTutor_EventScript_Mossdeep_Fighting_Tutor_Text_7:
 # 553 "data/scripts/move_tutors.pory"
 	.string "ACROBATICS$"
 
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_0:
+# 589 "data/scripts/move_tutors.pory"
+	.string "FLARE BLITZ$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_1:
+# 590 "data/scripts/move_tutors.pory"
+	.string "FLIP TURN$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_2:
+# 591 "data/scripts/move_tutors.pory"
+	.string "ENERGY BALL$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_3:
+# 592 "data/scripts/move_tutors.pory"
+	.string "EARTH POWER$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_4:
+# 593 "data/scripts/move_tutors.pory"
+	.string "GRASSY GLIDE$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_5:
+# 594 "data/scripts/move_tutors.pory"
+	.string "EXPANDING FORCE$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_6:
+# 595 "data/scripts/move_tutors.pory"
+	.string "MISTY EXPLOSION$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_7:
+# 596 "data/scripts/move_tutors.pory"
+	.string "RISING VOLTAGE$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_8:
+# 597 "data/scripts/move_tutors.pory"
+	.string "BLAST BURN$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_9:
+# 598 "data/scripts/move_tutors.pory"
+	.string "FRENZY PLANT$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_10:
+# 599 "data/scripts/move_tutors.pory"
+	.string "HYDRO CANNON$"
+
+MoveTutor_EventScript_EverGrandeCity_Tutor_Text_11:
+# 600 "data/scripts/move_tutors.pory"
+	.string "DRACO METEOR$"
+
 exit_yes::
-# 658 "data/scripts/move_tutors.pory"
+# 723 "data/scripts/move_tutors.pory"
 	.string "yes$"
 
 exit_no::
-# 662 "data/scripts/move_tutors.pory"
+# 727 "data/scripts/move_tutors.pory"
 	.string "no$"
 
 SlateportCity_PokemonFanClub_Tutor_Intro::
-# 666 "data/scripts/move_tutors.pory"
+# 731 "data/scripts/move_tutors.pory"
 	.string "Heh! My POKéMON totally rules!\n"
 	.string "It's cooler than any POKéMON!\p"
 	.string "I can even teach your POKéMON\n"
 	.string "to be almost as cool as mine.$"
 
 SlateportCity_PokemonFanClub_Tutor_Select::
-# 673 "data/scripts/move_tutors.pory"
+# 738 "data/scripts/move_tutors.pory"
 	.string "What move would you like to learn?$"
 
 SlateportCity_PokemonFanClub_Tutor_Outro::
-# 677 "data/scripts/move_tutors.pory"
+# 742 "data/scripts/move_tutors.pory"
 	.string "What, no? Can't you get into\n"
 	.string "the spirit of things?$"
 
 SlateportCity_PokemonFanClub_Tutor_Outro2::
-# 682 "data/scripts/move_tutors.pory"
+# 747 "data/scripts/move_tutors.pory"
 	.string "Now go out there and show off\n"
 	.string "your cool moves!$"
 
 MauvilleCity_Rolling_Tutor_Intro::
-# 687 "data/scripts/move_tutors.pory"
+# 752 "data/scripts/move_tutors.pory"
 	.string "Did you know that you can go from\n"
 	.string "here a long way in that direction\l"
 	.string "without changing direction?\p"
@@ -1642,64 +1851,64 @@ MauvilleCity_Rolling_Tutor_Intro::
 	.string "moves if you'd like.$"
 
 MauvilleCity_Rolling_Tutor_Select::
-# 699 "data/scripts/move_tutors.pory"
+# 764 "data/scripts/move_tutors.pory"
 	.string "Ehehe, sure thing! It'd be great if\n"
 	.string "the POKéMON looked like me.$"
 
 MauvilleCity_Rolling_Tutor_Outro::
-# 704 "data/scripts/move_tutors.pory"
+# 769 "data/scripts/move_tutors.pory"
 	.string "You don't need to be shy about it.\n"
 	.string "Let's roll!$"
 
 MauvilleCity_Rolling_Tutor_Outro2::
-# 709 "data/scripts/move_tutors.pory"
+# 774 "data/scripts/move_tutors.pory"
 	.string "Rolling around in the grass makes me\n"
 	.string "happy. Come on, let's roll!$"
 
 MossdeepCity_Fighting_Tutor_Meeting::
-# 714 "data/scripts/move_tutors.pory"
+# 779 "data/scripts/move_tutors.pory"
 	.string "You there! You seem like a strong trainer!\p"
 	.string "Defeat me in battle and I shall teach you\n"
 	.string "my strongest techniques!$"
 
 MossdeepCity_Fighting_Tutor_Propose_Battle::
-# 720 "data/scripts/move_tutors.pory"
+# 785 "data/scripts/move_tutors.pory"
 	.string "Do you accept my challenge?$"
 
 MossdeepCity_Fighting_Tutor_Accept_Battle::
-# 724 "data/scripts/move_tutors.pory"
+# 789 "data/scripts/move_tutors.pory"
 	.string "Yes! Our battle shall be a great one!$"
 
 MossdeepCity_Fighting_Tutor_Decline_Battle::
-# 728 "data/scripts/move_tutors.pory"
+# 793 "data/scripts/move_tutors.pory"
 	.string "I see. Come back if you can muster the\n"
 	.string "the courage to do so.$"
 
 MossdeepCity_Fighting_Tutor_Battle_End::
-# 733 "data/scripts/move_tutors.pory"
+# 798 "data/scripts/move_tutors.pory"
 	.string "Wahahaha! Very impressive!$"
 
 MossdeepCity_Fighting_Tutor_After_Battle::
-# 737 "data/scripts/move_tutors.pory"
+# 802 "data/scripts/move_tutors.pory"
 	.string "That was a great battle! I would be\n"
 	.string "honored to have you as my disciple!\p"
 	.string "Come to me anytime to teach your\n"
 	.string "POKéMON my powerful techniques!$"
 
 MossdeepCity_Fighting_Tutor_Intro::
-# 744 "data/scripts/move_tutors.pory"
+# 809 "data/scripts/move_tutors.pory"
 	.string "My disciple, let me teach your POKéMON\n"
 	.string "one of my powerful techniques!$"
 
 MossdeepCity_Fighting_Tutor_Select::
-# 749 "data/scripts/move_tutors.pory"
+# 814 "data/scripts/move_tutors.pory"
 	.string "What move would you like to learn?$"
 
 MossdeepCity_Fighting_Tutor_Outro::
-# 753 "data/scripts/move_tutors.pory"
+# 818 "data/scripts/move_tutors.pory"
 	.string "Grasp victory with the power I have\n"
 	.string "given to you!$"
 
 MossdeepCity_Fighting_Tutor_Outro2::
-# 758 "data/scripts/move_tutors.pory"
+# 823 "data/scripts/move_tutors.pory"
 	.string "Come back any time, my disciple.$"
